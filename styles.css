@@ -1,0 +1,14 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: cadetblue;
+}
+h1 {
+    color: crimson;
+    margin-left: 50%;
+    font-size: 200%;
+}
+form {
+    margin-left: 50%;
+    color: blueviolet;
+}
