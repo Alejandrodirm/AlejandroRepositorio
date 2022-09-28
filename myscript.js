@@ -1,2 +1,2 @@
-alert("hello to JS");
+//alert("hello to JS");
 console.log("(havaleria!!)");
