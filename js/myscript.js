@@ -220,9 +220,13 @@ let numbers2=[[1,2],[2,3],[3,4],[4,5]];
 let itself=numbers2.map(([x,y])=>x*y);
 console.log(itself);
 //create dom nodes I
+//creando muchos input de email
 $("#btn1").addEventListener("click",function(){
     var input=document.createElement("input");
-    console.log("input");
+    input.setAttribute("type","email");
+    input.setAttribute("placeholder","E-mail");
+    input.setAttribute("name","E-mail[]");
+    $("#form").appendChild(input);
 });
 function $(selector){
     return document.querySelector(selector);
