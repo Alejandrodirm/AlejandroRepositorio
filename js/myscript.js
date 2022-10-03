@@ -216,6 +216,6 @@ console.log(n_elevator_2);
 var n_elevator_2=numbers.map(n=>n*n);
 console.log(n_elevator_2);
 //
-let numbers=[[1,1],[2,2],[3,3],[4,4]];
-let itself=numbers.map(([x,y])=>x*y);
+let numbers2=[[1,1],[2,2],[3,3],[4,4]];
+let itself=numbers2.map(([x,y])=>x*y);
 console.log(itself);
