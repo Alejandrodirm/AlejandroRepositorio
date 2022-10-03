@@ -123,3 +123,65 @@ for(;i>-0;i--){
 fourth_array.forEach(function(element) {
     console.log("Fourth iteration "+element);
 });
+//if/else/elseif
+let aux =3;
+if(aux>0){
+    console.log("this number is positive");
+
+}else if(aux<0){
+    console.log("this number is negative");
+}else{
+    console.log("this number is 0");
+}
+//regular expressions
+var DNI_REGEX=/^(\d{8})([A-Z])$/;
+let dni="12345678K";
+if(dni.match(DNI_REGEX)){
+    console.log("Correct DNI");
+}else{
+    console.log("Incorrect DNI");
+}
+//comparison operators
+console.log(8==8);
+console.log(8=="8");
+console.log(8===8);//los 3 = son para comprobar que el valor y tipo son iguales
+console.log(8==="8");
+console.log(5>8);
+console.log(5<8);
+console.log(5>=8);
+console.log(5<=8);
+console.log(8!=8);
+console.log(8!="8");
+console.log(8!==8);
+console.log(8!=="8");
+console.log("test"=="test");
+console.log("test"==='test');
+console.log("test"=="Test");
+//loop while
+var i= 1;
+while(i<10){
+    console.log("the number is "+i)
+    i++;
+}
+//date object
+let today=new Date();
+let first_october=new Date(2022, 9, 1);
+console.log(today);
+console.log(first_october);
+console.log(today.getDay());
+console.log(today.getMonth());//empieza en 0
+//comparar las fechas
+if(today>first_october){
+    console.log("Today is after to first october");
+}else{
+    console.log("Today is before to first october");
+}
+//eventos
+// hay que añadir primero en html ejem: <button id="btn">My first magic button</button>
+//<button id="btn" onclick="myFirstFunction()">My first magic button</button>
+function myFirstFunction(){
+    console.log("Thank you for you click.");
+}
+function mySecondFunction(){
+    console.log("Thank you for you interest.");
+}
