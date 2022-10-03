@@ -196,9 +196,9 @@ console.log(div);
 var div=document.querySelector("#my_second_div");//# por que es una clase
 console.log(my_second_div);
 //llamo a todos los que se llamen my_third div
-function $(selector){
-    return document.querySelectorAll(selector);
-}
+//function $(selector){
+//    return document.querySelectorAll(selector);
+//}
 console.log($("#my_third_div"));
 console.log($(".div_especial"))
 //funciones
@@ -219,3 +219,11 @@ console.log(n_elevator_2);
 let numbers2=[[1,2],[2,3],[3,4],[4,5]];
 let itself=numbers2.map(([x,y])=>x*y);
 console.log(itself);
+//create dom nodes I
+$("#btn1").addEventListener("click",function(){
+    var input=document.createElement("input");
+    console.log("input");
+});
+function $(selector){
+    return document.querySelector(selector);
+}
