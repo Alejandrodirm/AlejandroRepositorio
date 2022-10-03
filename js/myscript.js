@@ -227,7 +227,14 @@ $("#btn1").addEventListener("click",function(){
     input.setAttribute("placeholder","E-mail");
     input.setAttribute("name","E-mail[]");
     $("#form").appendChild(input);
+    myAlert("add new email input");
 });
 function $(selector){
     return document.querySelector(selector);
+}
+function myAlert(msg){
+    var div=document.createElement("div");
+    div.classList.add("alert");
+    div.innerHTML=msg;
+    $("body").insertBefore(div,$("body".firstChild))
 }
