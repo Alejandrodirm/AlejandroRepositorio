@@ -185,3 +185,37 @@ function myFirstFunction(){
 function mySecondFunction(){
     console.log("Thank you for you interest.");
 }
+//Select DOM adañir de forma dinamica una clase a my_div
+var div=document.getElementById("my_div");
+div.classList.add("my_class");
+console.log(div);
+//select dom II
+var div=document.getElementsByTagName("div");
+console.log(div);
+
+var div=document.querySelector("#my_second_div");//# por que es una clase
+console.log(my_second_div);
+//llamo a todos los que se llamen my_third div
+function $(selector){
+    return document.querySelectorAll(selector);
+}
+console.log($("#my_third_div"));
+console.log($(".div_especial"))
+//funciones
+//cada elemento del array lo elevo a 2
+var numbers=[1,2,3,4];
+var n_elevator_2=numbers.map(function(n){return n*n;});
+console.log(n_elevator_2);
+//otra forma del anterior => funcion flecha
+var n_elevator_2=numbers.map((n)=>{return n*n;});
+console.log(n_elevator_2);
+// muestra el array del cambio con el console.log dentro
+var n_elevator_2=numbers.map((n)=>{console.log(n*n); return n*n;});
+console.log(n_elevator_2);
+//map lo que hace dado un array le aplica una función 
+var n_elevator_2=numbers.map(n=>n*n);
+console.log(n_elevator_2);
+//
+let numbers=[[1,1],[2,2],[3,3],[4,4]];
+let itself=numbers.map(([x,y])=>x*y);
+console.log(itself);
