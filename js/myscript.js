@@ -280,3 +280,17 @@ var pairnumber=testArray3.filter((num)=>{
     return num % 2===0;
 })
 console.log(pairnumber);
+//map
+var testArray=[1,2,3,5,7];
+var testArray2=testArray.map(function(num){
+    return num*num;
+});
+console.log(testArray2);
+//callbacks
+setTimeout(function(){
+    console.log("hello world");
+}, 2500);
+//clausures
+document.getElementById("btn2").addEventListener("click",()=>{
+  console.log("Click detected");  
+})
