@@ -291,6 +291,11 @@ setTimeout(function(){
     console.log("hello world");
 }, 2500);
 //clausures
-document.getElementById("btn2").addEventListener("click",()=>{
-  console.log("Click detected");  
-})
+//document.getElementById("btn2").addEventListener("click",()=>{
+//  console.log("Click detected");  
+//})
+(function(){
+    document.getElementById("btn2").addEventListener("click",()=>{
+        console.log("Click detected");  
+    });
+})();
