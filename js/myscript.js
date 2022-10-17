@@ -299,3 +299,21 @@ setTimeout(function(){
         console.log("Click detected");  
     });
 })();
+//JSON la coma el ultimo elemento no lo lleva
+var course={
+    title:"Course JS Advanced",
+    section:4,
+    subsection:6,
+    teacher:"Javier Prada",
+    intro: function(){
+        console.log("Welcome to "+this.title+" with "+this.section+" section");
+        this.function2();
+
+    },
+    function2: function(){
+        console.log("intro to second function");
+    }
+}
+console.log(course["teacher"]);
+console.log(course.title);
+course.intro();
