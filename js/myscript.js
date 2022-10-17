@@ -254,3 +254,29 @@ function bind_close(){
         });
     }
 }
+//sort
+
+var testArray=[10,1,2,3,5,9,24,45,32];
+testArray.sort();
+console.log(testArray);
+testArray.sort();
+function sortNumber(a,b){
+    return a-b;
+}
+console.log(testArray.sort(sortNumber));
+//reverse
+testArray.reverse();
+console.log(testArray);
+//split
+var testString1="a,b,c,d,e,f,2,3,44,43";
+var testArray=testString1.split(",");
+console.log(testArray);
+//join
+var testJoin=testArray.join(".");
+console.log(testJoin);
+//filtros
+var testArray3=[10,2,3,5,9];
+var pairnumber=testArray3.filter((num)=>{
+    return num % 2===0;
+})
+console.log(pairnumber);
